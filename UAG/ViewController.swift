@@ -20,7 +20,16 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
-    @IBAction func goto_sport(_ sender: UIButton) {
+    @IBAction func button_scolaire(_ sender: UIButton) {
+    }
+    
+    @IBAction func button_sport(_ sender: UIButton) {
+    }
+    
+    @IBAction func button_carte(_ sender: UIButton) {
+    }
+    
+    @IBAction func button_crous (sender: UIButton) {
     }
     
 }

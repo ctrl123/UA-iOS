@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6154B99B1F9A36C00045592D /* RoundButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6154B99A1F9A36C00045592D /* RoundButton.swift */; };
+		6154B99D1F9A45610045592D /* Loading.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6154B99C1F9A45610045592D /* Loading.swift */; };
 		F744F0A51F9A1F17009C9A9B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F744F0A41F9A1F17009C9A9B /* AppDelegate.swift */; };
 		F744F0A71F9A1F17009C9A9B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F744F0A61F9A1F17009C9A9B /* ViewController.swift */; };
 		F744F0AA1F9A1F17009C9A9B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F744F0A81F9A1F17009C9A9B /* Main.storyboard */; };
@@ -14,7 +16,6 @@
 		F744F0AF1F9A1F17009C9A9B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F744F0AD1F9A1F17009C9A9B /* LaunchScreen.storyboard */; };
 		F744F0BA1F9A1F17009C9A9B /* UAGTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F744F0B91F9A1F17009C9A9B /* UAGTests.swift */; };
 		F744F0C51F9A1F17009C9A9B /* UAGUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F744F0C41F9A1F17009C9A9B /* UAGUITests.swift */; };
-		F744F0D51F9A41A1009C9A9B /* ViewControllerSport.swift in Sources */ = {isa = PBXBuildFile; fileRef = F744F0D41F9A41A1009C9A9B /* ViewControllerSport.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6154B99A1F9A36C00045592D /* RoundButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundButton.swift; sourceTree = "<group>"; };
+		6154B99C1F9A45610045592D /* Loading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loading.swift; sourceTree = "<group>"; };
 		F744F0A11F9A1F17009C9A9B /* UAG.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UAG.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F744F0A41F9A1F17009C9A9B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F744F0A61F9A1F17009C9A9B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -48,7 +51,6 @@
 		F744F0C01F9A1F17009C9A9B /* UAGUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UAGUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F744F0C41F9A1F17009C9A9B /* UAGUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UAGUITests.swift; sourceTree = "<group>"; };
 		F744F0C61F9A1F17009C9A9B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F744F0D41F9A41A1009C9A9B /* ViewControllerSport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerSport.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,7 +107,8 @@
 				F744F0AB1F9A1F17009C9A9B /* Assets.xcassets */,
 				F744F0AD1F9A1F17009C9A9B /* LaunchScreen.storyboard */,
 				F744F0B01F9A1F17009C9A9B /* Info.plist */,
-				F744F0D41F9A41A1009C9A9B /* ViewControllerSport.swift */,
+				6154B99A1F9A36C00045592D /* RoundButton.swift */,
+				6154B99C1F9A45610045592D /* Loading.swift */,
 			);
 			path = UAG;
 			sourceTree = "<group>";
@@ -262,8 +265,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6154B99B1F9A36C00045592D /* RoundButton.swift in Sources */,
 				F744F0A71F9A1F17009C9A9B /* ViewController.swift in Sources */,
-				F744F0D51F9A41A1009C9A9B /* ViewControllerSport.swift in Sources */,
+				6154B99D1F9A45610045592D /* Loading.swift in Sources */,
 				F744F0A51F9A1F17009C9A9B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -431,7 +435,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = BH5BV5QVTD;
+				DEVELOPMENT_TEAM = 947AG68NT2;
 				INFOPLIST_FILE = UAG/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = etudiant1.UAG;
@@ -446,7 +450,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = BH5BV5QVTD;
+				DEVELOPMENT_TEAM = 947AG68NT2;
 				INFOPLIST_FILE = UAG/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = etudiant1.UAG;
