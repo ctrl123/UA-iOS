@@ -4,7 +4,7 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -38,7 +38,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="interface_main" translatesAutoresizingMaskIntoConstraints="NO" id="uYF-wk-spF">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="interface_base" translatesAutoresizingMaskIntoConstraints="NO" id="uYF-wk-spF">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -52,7 +52,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hWC-3D-YgR" customClass="RoundButton" customModule="UAG" customModuleProvider="target">
                                 <rect key="frame" x="127" y="237" width="67" height="67"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="bouton scolarité"/>
+                                <state key="normal" image="bouton_scolarité"/>
                                 <connections>
                                     <action selector="button_scolaire:" destination="5ys-jx-gN1" eventType="touchUpInside" id="0Ni-7p-4bV"/>
                                     <segue destination="DfO-Ao-Dmq" kind="show" id="Ze5-UZ-auc"/>
@@ -61,7 +61,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aPS-qd-cKM" customClass="RoundButton" customModule="UAG" customModuleProvider="target">
                                 <rect key="frame" x="63" y="301" width="67" height="67"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="bouton crous"/>
+                                <state key="normal" title="Button" image="bouton_crous"/>
                                 <connections>
                                     <action selector="button_carte:" destination="5ys-jx-gN1" eventType="touchUpInside" id="tbX-75-YQz"/>
                                     <segue destination="Rxx-Ok-dcf" kind="show" identifier="goto_crous" id="Xde-Ee-qPZ"/>
@@ -70,7 +70,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OPr-fJ-Xom" customClass="RoundButton" customModule="UAG" customModuleProvider="target">
                                 <rect key="frame" x="127" y="367" width="67" height="67"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="bouton carte"/>
+                                <state key="normal" image="bouton_carte"/>
                                 <connections>
                                     <action selector="button_carte:" destination="5ys-jx-gN1" eventType="touchUpInside" id="Fla-gk-opf"/>
                                     <segue destination="SzC-zR-og6" kind="show" identifier="goto_carte" id="Yk2-k7-z2H"/>
@@ -79,7 +79,7 @@
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IiI-9W-Xrv">
                                 <rect key="frame" x="202" y="301" width="67" height="67"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="bouton sport"/>
+                                <state key="normal" image="bouton_sport"/>
                                 <connections>
                                     <action selector="button_sport:" destination="5ys-jx-gN1" eventType="touchUpInside" id="1bT-TL-Ss3"/>
                                     <segue destination="T2Z-wi-1o3" kind="show" id="FBf-dF-7dq"/>
@@ -95,15 +95,15 @@
             </objects>
             <point key="canvasLocation" x="1567.5" y="111.97183098591549"/>
         </scene>
-        <!--page_crous-->
+        <!--Crous-->
         <scene sceneID="D9P-ni-8Eo">
             <objects>
-                <viewController title="page_crous" id="Rxx-Ok-dcf" sceneMemberID="viewController">
+                <viewController title="Crous" id="Rxx-Ok-dcf" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Q7t-H9-hHm">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="interface_crous" translatesAutoresizingMaskIntoConstraints="NO" id="sWq-06-Do6">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="interface_crous_bas" translatesAutoresizingMaskIntoConstraints="NO" id="sWq-06-Do6">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -124,7 +124,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="interface_carte" translatesAutoresizingMaskIntoConstraints="NO" id="HaD-sS-M3d">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="interface_carte_bas" translatesAutoresizingMaskIntoConstraints="NO" id="HaD-sS-M3d">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -145,7 +145,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="interface_sport" translatesAutoresizingMaskIntoConstraints="NO" id="gFA-Gs-Chj">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="interface_sport_bas" translatesAutoresizingMaskIntoConstraints="NO" id="gFA-Gs-Chj">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -178,14 +178,14 @@
         </scene>
     </scenes>
     <resources>
-        <image name="bouton carte" width="184" height="172"/>
-        <image name="bouton crous" width="184" height="172"/>
-        <image name="bouton scolarité" width="184" height="172"/>
-        <image name="bouton sport" width="184" height="172"/>
-        <image name="interface_carte" width="768" height="1280"/>
-        <image name="interface_crous" width="768" height="1280"/>
-        <image name="interface_main" width="768" height="1280"/>
+        <image name="bouton_carte" width="184" height="172"/>
+        <image name="bouton_crous" width="184" height="172"/>
+        <image name="bouton_scolarité" width="184" height="172"/>
+        <image name="bouton_sport" width="184" height="172"/>
+        <image name="interface_base" width="768" height="1280"/>
+        <image name="interface_carte_bas" width="768" height="1280"/>
+        <image name="interface_crous_bas" width="768" height="1280"/>
         <image name="interface_scolaire" width="768" height="1280"/>
-        <image name="interface_sport" width="768" height="1280"/>
+        <image name="interface_sport_bas" width="768" height="1280"/>
     </resources>
 </document>
