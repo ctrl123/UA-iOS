@@ -16,16 +16,16 @@ class ViewControllerSport: UIViewController, UITableViewDataSource, UITableViewD
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cellReuseIdentifier")! //1.
         
-        let text = data[indexPath.row] //2.
+        let text = dataID[indexPath.row]
         
-        cell.textLabel?.text = text //3.
+        cell.textLabel?.text = text
         
         return cell //4.
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-        let alertController = UIAlertController(title: "Hint", message: "You have selected row \(indexPath.row).", preferredStyle: .alert)
+        let alertController = UIAlertController(title: "Hint", message: "You have selected row \(indexPath.description).", preferredStyle: .alert)
         
         let alertAction = UIAlertAction(title: "Ok", style: .cancel, handler: nil)
         
@@ -38,10 +38,13 @@ class ViewControllerSport: UIViewController, UITableViewDataSource, UITableViewD
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        /*
         for i in 0...15 {
-            data.append("\(i)")
-        }
+            //data.append("zth","\(i)")
+        }*//*
+        for (cle, valeur) in data{
+         
+        }*/
         
         tableViewSport.dataSource = self
         tableViewSport.delegate = self
@@ -57,7 +60,9 @@ class ViewControllerSport: UIViewController, UITableViewDataSource, UITableViewD
     
     @IBOutlet weak var tableViewSport: UITableView!
     
-    private var data: [String] = []
+    private var dataID: [String] = ["Ou faire du sport?","Ou s'inscrire","Ou est le SUAPS?"]
+    
+    private var data: [String:String] = ["Ou faire du sport?": "Au SUAPS", "Ou s'inscrire": "Toujours au SUAPS", "Ou est le SUAPS?": "Va zyeuter la carte"]
     
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
