@@ -4,20 +4,20 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--page_scolaire-->
+        <!--Scolaire-->
         <scene sceneID="184-Ol-P6m">
             <objects>
-                <viewController title="page_scolaire" id="DfO-Ao-Dmq" sceneMemberID="viewController">
+                <viewController title="Scolaire" id="DfO-Ao-Dmq" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="41O-OT-Bm8">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="interface_scolaire" translatesAutoresizingMaskIntoConstraints="NO" id="46x-1C-eEY">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="interface_base" translatesAutoresizingMaskIntoConstraints="NO" id="46x-1C-eEY">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -30,10 +30,10 @@
             </objects>
             <point key="canvasLocation" x="1398.75" y="-682.3943661971831"/>
         </scene>
-        <!--Main_page-->
+        <!--Acceuil-->
         <scene sceneID="F31-Mc-hNU">
             <objects>
-                <viewController title="Main_page" id="5ys-jx-gN1" customClass="ViewController" customModule="UAG" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Acceuil" id="5ys-jx-gN1" customClass="ViewController" customModule="UAG" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="SYo-Ca-vJh">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -89,7 +89,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="saN-gp-U5r"/>
                     </view>
-                    <navigationItem key="navigationItem" id="dla-gp-vns"/>
+                    <navigationItem key="navigationItem" title="Accueil" id="dla-gp-vns"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uFE-Nr-SBP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -116,10 +116,10 @@
             </objects>
             <point key="canvasLocation" x="1638.75" y="990.84507042253517"/>
         </scene>
-        <!--page_carte-->
+        <!--Carte-->
         <scene sceneID="fnl-9z-uBS">
             <objects>
-                <viewController title="page_carte" id="SzC-zR-og6" sceneMemberID="viewController">
+                <viewController title="Carte" id="SzC-zR-og6" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Wq0-My-Muc">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -137,10 +137,10 @@
             </objects>
             <point key="canvasLocation" x="2583.75" y="1007.7464788732394"/>
         </scene>
-        <!--page_sport-->
+        <!--Sport-->
         <scene sceneID="g8h-sA-pha">
             <objects>
-                <viewController title="page_sport" id="T2Z-wi-1o3" sceneMemberID="viewController">
+                <viewController title="Sport" id="T2Z-wi-1o3" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="97q-a1-bdj">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -185,7 +185,6 @@
         <image name="interface_base" width="768" height="1280"/>
         <image name="interface_carte_bas" width="768" height="1280"/>
         <image name="interface_crous_bas" width="768" height="1280"/>
-        <image name="interface_scolaire" width="768" height="1280"/>
         <image name="interface_sport_bas" width="768" height="1280"/>
     </resources>
 </document>
