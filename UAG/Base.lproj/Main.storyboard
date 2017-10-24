@@ -4,7 +4,7 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -124,12 +124,24 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="interface_carte_bas" translatesAutoresizingMaskIntoConstraints="NO" id="HaD-sS-M3d">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="interface_carte_bas" translatesAutoresizingMaskIntoConstraints="NO" id="HaD-sS-M3d">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView multipleTouchEnabled="YES" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="carte ua" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ehK-2Q-1Ux">
+                                <rect key="frame" x="0.0" y="64" width="320" height="439"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ehK-2Q-1Ux" firstAttribute="centerY" secondItem="Wq0-My-Muc" secondAttribute="centerY" id="1EI-Oa-cHE"/>
+                            <constraint firstItem="HaD-sS-M3d" firstAttribute="leading" secondItem="ehK-2Q-1Ux" secondAttribute="leading" id="5Ef-EN-opE"/>
+                            <constraint firstItem="HaD-sS-M3d" firstAttribute="bottom" secondItem="bKX-wL-EwH" secondAttribute="bottom" id="5Tg-uG-EqM"/>
+                            <constraint firstItem="ehK-2Q-1Ux" firstAttribute="top" secondItem="bKX-wL-EwH" secondAttribute="top" id="IFB-Qy-nvE"/>
+                            <constraint firstItem="HaD-sS-M3d" firstAttribute="trailing" secondItem="ehK-2Q-1Ux" secondAttribute="trailing" id="KVD-ye-0na"/>
+                            <constraint firstItem="ehK-2Q-1Ux" firstAttribute="leading" secondItem="Wq0-My-Muc" secondAttribute="leading" id="QKD-bW-kCA"/>
+                            <constraint firstAttribute="trailing" secondItem="ehK-2Q-1Ux" secondAttribute="trailing" id="afL-sm-oya"/>
+                            <constraint firstItem="HaD-sS-M3d" firstAttribute="centerY" secondItem="ehK-2Q-1Ux" secondAttribute="centerY" id="jdn-fg-MvZ"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="bKX-wL-EwH"/>
                     </view>
                 </viewController>
@@ -201,6 +213,7 @@
         <image name="bouton_crous" width="184" height="172"/>
         <image name="bouton_scolarité" width="184" height="172"/>
         <image name="bouton_sport" width="184" height="172"/>
+        <image name="carte ua" width="658" height="1196"/>
         <image name="interface_base" width="768" height="1280"/>
         <image name="interface_carte_bas" width="768" height="1280"/>
         <image name="interface_crous_bas" width="768" height="1280"/>
