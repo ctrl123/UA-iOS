@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewControllerSport: UIViewController, UITableViewDataSource {
+class ViewControllerSport: UIViewController, UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return data.count
     }
@@ -23,6 +23,18 @@ class ViewControllerSport: UIViewController, UITableViewDataSource {
         return cell //4.
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        let alertController = UIAlertController(title: "Hint", message: "You have selected row \(indexPath.row).", preferredStyle: .alert)
+        
+        let alertAction = UIAlertAction(title: "Ok", style: .cancel, handler: nil)
+        
+        alertController.addAction(alertAction)
+        
+        present(alertController, animated: true, completion: nil)
+        
+    }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,6 +44,7 @@ class ViewControllerSport: UIViewController, UITableViewDataSource {
         }
         
         tableViewSport.dataSource = self
+        tableViewSport.delegate = self
         // Do any additional setup after loading the view.
     }
     
