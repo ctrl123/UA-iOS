@@ -8,8 +8,12 @@
 
 import UIKit
 
+
+
 class ViewController: UIViewController {
 
+    @IBOutlet weak var interface_acceuil: UIImageView!
+    @IBOutlet weak var jour_nuit: UISegmentedControl!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -30,6 +34,15 @@ class ViewController: UIViewController {
     }
     
     @IBAction func button_crous (sender: UIButton) {
+    }
+    
+    @IBAction func change_fond(_ sender: Any) {
+        if jour_nuit.selectedSegmentIndex == 1 {
+            interface_acceuil.image = #imageLiteral(resourceName: "launch_screen")
+        }
+        else {
+            interface_acceuil.image = #imageLiteral(resourceName: "interface_base")
+        }
     }
     
 }
