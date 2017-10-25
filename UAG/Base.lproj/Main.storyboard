@@ -55,7 +55,7 @@
                                 <state key="normal" image="bouton_scolarité"/>
                                 <connections>
                                     <action selector="button_scolaire:" destination="5ys-jx-gN1" eventType="touchUpInside" id="0Ni-7p-4bV"/>
-                                    <segue destination="DfO-Ao-Dmq" kind="show" id="Ze5-UZ-auc"/>
+                                    <segue destination="DfO-Ao-Dmq" kind="show" identifier="goto_scolaire" id="Ze5-UZ-auc"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aPS-qd-cKM">
@@ -82,14 +82,64 @@
                                 <state key="normal" image="bouton_sport"/>
                                 <connections>
                                     <action selector="button_sport:" destination="5ys-jx-gN1" eventType="touchUpInside" id="1bT-TL-Ss3"/>
-                                    <segue destination="T2Z-wi-1o3" kind="show" id="FBf-dF-7dq"/>
+                                    <segue destination="T2Z-wi-1o3" kind="show" identifier="goto_sport" id="FBf-dF-7dq"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4e0-PK-j8L">
+                                <rect key="frame" x="0.0" y="64" width="184" height="48"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="UG : UA-Guid">
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.40515067428551932" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="21" name="Impact"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" red="0.38802869065678064" green="0.38625664828974882" blue="0.44075858160621761" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <size key="shadowOffset" width="1" height="1"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N7v-H2-OwU">
+                                <rect key="frame" x="57" y="120" width="207" height="93"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Choisissez  votre domaine d'aide">
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="18" name="Impact"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                                <color key="shadowColor" red="0.6014005829015544" green="0.6014005829015544" blue="0.6014005829015544" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <size key="shadowOffset" width="-1" height="-1"/>
+                            </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="x2W-2M-pY0">
+                                <rect key="frame" x="16" y="520" width="121" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <segments>
+                                    <segment title="Jour"/>
+                                    <segment title="Nuit"/>
+                                </segments>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="change_fond:" destination="5ys-jx-gN1" eventType="valueChanged" id="AbE-yv-j1x"/>
+                                    <action selector="jour_nuit:" destination="5ys-jx-gN1" eventType="touchUpInside" id="bHD-ZU-gMc"/>
+                                </connections>
+                            </segmentedControl>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="saN-gp-U5r"/>
                     </view>
                     <navigationItem key="navigationItem" title="Accueil" id="dla-gp-vns"/>
+                    <connections>
+                        <outlet property="interface_acceuil" destination="uYF-wk-spF" id="3zI-w7-Pus"/>
+                        <outlet property="jour_nuit" destination="x2W-2M-pY0" id="ZLW-2w-ugM"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uFE-Nr-SBP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
