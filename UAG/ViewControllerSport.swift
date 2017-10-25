@@ -25,9 +25,9 @@ class ViewControllerSport: UIViewController, UITableViewDataSource, UITableViewD
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-        let alertController = UIAlertController(title: "Hint", message: "You have selected row \(indexPath.description).", preferredStyle: .alert)
+        let alertController = UIAlertController(title: dataID[indexPath.row], message: "\(data[dataID[indexPath.row]] ?? "reponse").", preferredStyle: .alert)
         
-        let alertAction = UIAlertAction(title: "Ok", style: .cancel, handler: nil)
+        let alertAction = UIAlertAction(title: "Compris.", style: .cancel, handler: nil)
         
         alertController.addAction(alertAction)
         
