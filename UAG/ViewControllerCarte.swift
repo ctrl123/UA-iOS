@@ -18,15 +18,39 @@ class ViewControllerCarte: UIViewController {
 
         // Do any additional setup after loading the view.
         
-        let location = CLLocationCoordinate2DMake(14.620, -61.094)
-        let span = MKCoordinateSpanMake(0.004, 0.004)
-        let region = MKCoordinateRegion(center: location, span: span)
-        Carte.setRegion(region, animated: true)
-        let dropPin = MKPointAnnotation()
-        dropPin.coordinate = location
-        dropPin.title = "UA"
-        dropPin.subtitle = "Université des Antilles"
-        Carte.addAnnotation(dropPin)
+        let UAlocation = CLLocationCoordinate2DMake(14.620, -61.094)
+        let Crouslocation = CLLocationCoordinate2DMake(14.620742, -61.092579)
+        let Sportlocation = CLLocationCoordinate2DMake(14.620797, -61.093532)
+        let AdminLocation = CLLocationCoordinate2DMake(14.619831, -61.094798)
+        
+        let UAspan = MKCoordinateSpanMake(0.002, 0.002)
+        let UAregion = MKCoordinateRegion(center: UAlocation, span: UAspan)
+        Carte.setRegion(UAregion, animated: true)
+        
+        let UAPin = MKPointAnnotation()
+        let CrousPin = MKPointAnnotation()
+        let SportPin = MKPointAnnotation()
+        let AdminPin = MKPointAnnotation()
+        
+        UAPin.coordinate = UAlocation
+        CrousPin.coordinate = Crouslocation
+        SportPin.coordinate = Sportlocation
+        AdminPin.coordinate = AdminLocation
+        
+        UAPin.title = "UA"
+        UAPin.subtitle = "Université des Antilles"
+        CrousPin.title = "CROUS / CLOUS"
+        CrousPin.subtitle = "Logement & Bourse"
+        SportPin.title = "Sports"
+        SportPin.subtitle = "Gymnase & Terrain"
+        AdminPin.title = "Administration UA"
+        AdminPin.subtitle = "Administration générale & SUAPS"
+        
+        Carte.addAnnotation(UAPin)
+        Carte.addAnnotation(CrousPin)
+        Carte.addAnnotation(SportPin)
+        Carte.addAnnotation(AdminPin)
+        
     }
 
     override func didReceiveMemoryWarning() {
