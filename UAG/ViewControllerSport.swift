@@ -51,7 +51,7 @@ class ViewControllerSport: UIViewController, UITableViewDataSource, UITableViewD
         tableViewSport.delegate = self //permet de configurer le systeme de popup du tableView
         
         // Do any additional setup after loading the view.
-    }
+    } 
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -66,7 +66,15 @@ class ViewControllerSport: UIViewController, UITableViewDataSource, UITableViewD
     private var data: [String:String] = [
         "Ou faire du sport?": "Au SUAPS",
         "Ou s'inscrire?": "Toujours au SUAPS",
-        "Ou est le SUAPS?": "Va zyeuter la carte"
+        "Ou est le SUAPS?": "Va zyeuter la carte",
+        "Question1": "Reponse",
+        "Question2": "Reponse",
+        "Question3": "Reponse",
+        "Question4": "Reponse",
+        "Question5": "Reponse",
+        "Question6": "Reponse",
+        "Question7": "Reponse",
+        "Question8": "Reponse"
     ]
     
     // Tableau de String vide
