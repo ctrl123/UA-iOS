@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		616D1B161F9F6EEB00DA114D /* ViewControllerSport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 616D1B151F9F6EEB00DA114D /* ViewControllerSport.swift */; };
+		C0329F581FA65A4100419D01 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0329F571FA65A4100419D01 /* MapKit.framework */; };
+		C0329F5D1FA65DB900419D01 /* ViewControllerCarte.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0329F5C1FA65DB900419D01 /* ViewControllerCarte.swift */; };
 		F744F0A51F9A1F17009C9A9B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F744F0A41F9A1F17009C9A9B /* AppDelegate.swift */; };
 		F744F0A71F9A1F17009C9A9B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F744F0A61F9A1F17009C9A9B /* ViewController.swift */; };
 		F744F0AA1F9A1F17009C9A9B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F744F0A81F9A1F17009C9A9B /* Main.storyboard */; };
@@ -36,6 +38,8 @@
 
 /* Begin PBXFileReference section */
 		616D1B151F9F6EEB00DA114D /* ViewControllerSport.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerSport.swift; sourceTree = "<group>"; };
+		C0329F571FA65A4100419D01 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		C0329F5C1FA65DB900419D01 /* ViewControllerCarte.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerCarte.swift; sourceTree = "<group>"; };
 		F744F0A11F9A1F17009C9A9B /* UAG.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UAG.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F744F0A41F9A1F17009C9A9B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F744F0A61F9A1F17009C9A9B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -56,6 +60,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C0329F581FA65A4100419D01 /* MapKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,6 +81,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C0329F561FA65A4100419D01 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C0329F571FA65A4100419D01 /* MapKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		F744F0981F9A1F17009C9A9B = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +96,7 @@
 				F744F0B81F9A1F17009C9A9B /* UAGTests */,
 				F744F0C31F9A1F17009C9A9B /* UAGUITests */,
 				F744F0A21F9A1F17009C9A9B /* Products */,
+				C0329F561FA65A4100419D01 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -102,6 +116,7 @@
 				F744F0A41F9A1F17009C9A9B /* AppDelegate.swift */,
 				F744F0A61F9A1F17009C9A9B /* ViewController.swift */,
 				F744F0A81F9A1F17009C9A9B /* Main.storyboard */,
+				C0329F5C1FA65DB900419D01 /* ViewControllerCarte.swift */,
 				616D1B151F9F6EEB00DA114D /* ViewControllerSport.swift */,
 				F744F0AB1F9A1F17009C9A9B /* Assets.xcassets */,
 				F744F0AD1F9A1F17009C9A9B /* LaunchScreen.storyboard */,
@@ -197,6 +212,11 @@
 					F744F0A01F9A1F17009C9A9B = {
 						CreatedOnToolsVersion = 9.0;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
 					};
 					F744F0B41F9A1F17009C9A9B = {
 						CreatedOnToolsVersion = 9.0;
@@ -264,6 +284,7 @@
 			files = (
 				F744F0A71F9A1F17009C9A9B /* ViewController.swift in Sources */,
 				616D1B161F9F6EEB00DA114D /* ViewControllerSport.swift in Sources */,
+				C0329F5D1FA65DB900419D01 /* ViewControllerCarte.swift in Sources */,
 				F744F0A51F9A1F17009C9A9B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
