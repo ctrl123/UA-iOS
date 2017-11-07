@@ -28,13 +28,20 @@ class ViewControllerSport: UIViewController, UITableViewDataSource, UITableViewD
     //fonction qui gère la popup de chaque élément de la tableView
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-        let alertController = UIAlertController(title: dataID[indexPath.row], message: "\(data[dataID[indexPath.row]] ?? "reponse").", preferredStyle: .alert) // ou .actionSheet
+        let alertController = UIAlertController(
+            title: dataID[indexPath.row],
+            message: "\(data[dataID[indexPath.row]] ?? "reponse").",
+            preferredStyle: .alert) // ou .actionSheet
+        
+        //alertController.view.backgroundColor = UIColor.cyan
+        
+        let img = UIImage(named: "UA-Guid_logotest5")
+        alertController.addImage(image: img!)
         
         let alertAction = UIAlertAction(title: "Compris.", style: .default, handler: nil)
-        
         alertController.addAction(alertAction)
         
-        present(alertController, animated: true, completion: nil)
+        self.present(alertController, animated: true, completion: nil)
         
     }
     
@@ -49,6 +56,8 @@ class ViewControllerSport: UIViewController, UITableViewDataSource, UITableViewD
         
         tableViewSport.dataSource = self //permet de gerer les sources de la tableView
         tableViewSport.delegate = self //permet de configurer le systeme de popup du tableView
+        
+        
         
         // Do any additional setup after loading the view.
     } 

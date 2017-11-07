@@ -17,6 +17,8 @@
 		F744F0AF1F9A1F17009C9A9B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F744F0AD1F9A1F17009C9A9B /* LaunchScreen.storyboard */; };
 		F744F0BA1F9A1F17009C9A9B /* UAGTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F744F0B91F9A1F17009C9A9B /* UAGTests.swift */; };
 		F744F0C51F9A1F17009C9A9B /* UAGUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F744F0C41F9A1F17009C9A9B /* UAGUITests.swift */; };
+		F7784C031FB2085200292D73 /* AlertControllerWithImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7784C021FB2085200292D73 /* AlertControllerWithImage.swift */; };
+		F7784C051FB212D800292D73 /* ImageResize.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7784C041FB212D800292D73 /* ImageResize.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,8 @@
 		F744F0C01F9A1F17009C9A9B /* UAGUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UAGUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F744F0C41F9A1F17009C9A9B /* UAGUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UAGUITests.swift; sourceTree = "<group>"; };
 		F744F0C61F9A1F17009C9A9B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F7784C021FB2085200292D73 /* AlertControllerWithImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertControllerWithImage.swift; sourceTree = "<group>"; };
+		F7784C041FB212D800292D73 /* ImageResize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageResize.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +117,7 @@
 		F744F0A31F9A1F17009C9A9B /* UAG */ = {
 			isa = PBXGroup;
 			children = (
+				F7784C011FB2081F00292D73 /* Extensions */,
 				F744F0A41F9A1F17009C9A9B /* AppDelegate.swift */,
 				F744F0A61F9A1F17009C9A9B /* ViewController.swift */,
 				F744F0A81F9A1F17009C9A9B /* Main.storyboard */,
@@ -141,6 +146,15 @@
 				F744F0C61F9A1F17009C9A9B /* Info.plist */,
 			);
 			path = UAGUITests;
+			sourceTree = "<group>";
+		};
+		F7784C011FB2081F00292D73 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F7784C041FB212D800292D73 /* ImageResize.swift */,
+				F7784C021FB2085200292D73 /* AlertControllerWithImage.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -282,9 +296,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F7784C051FB212D800292D73 /* ImageResize.swift in Sources */,
 				F744F0A71F9A1F17009C9A9B /* ViewController.swift in Sources */,
 				616D1B161F9F6EEB00DA114D /* ViewControllerSport.swift in Sources */,
 				C0329F5D1FA65DB900419D01 /* ViewControllerCarte.swift in Sources */,
+				F7784C031FB2085200292D73 /* AlertControllerWithImage.swift in Sources */,
 				F744F0A51F9A1F17009C9A9B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
