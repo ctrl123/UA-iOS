@@ -13,7 +13,7 @@
         <!--Scolaire-->
         <scene sceneID="184-Ol-P6m">
             <objects>
-                <viewController title="Scolaire" id="DfO-Ao-Dmq" sceneMemberID="viewController">
+                <viewController title="Scolaire" id="DfO-Ao-Dmq" customClass="ViewControllerAdmin" customModule="UAG" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="41O-OT-Bm8">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -149,7 +149,7 @@
         <!--Crous-->
         <scene sceneID="D9P-ni-8Eo">
             <objects>
-                <viewController title="Crous" id="Rxx-Ok-dcf" sceneMemberID="viewController">
+                <viewController title="Crous" id="Rxx-Ok-dcf" customClass="ViewControllerCrous" customModule="UAG" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Q7t-H9-hHm">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
