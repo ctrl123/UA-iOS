@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		616D1B161F9F6EEB00DA114D /* ViewControllerSport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 616D1B151F9F6EEB00DA114D /* ViewControllerSport.swift */; };
+		A46589B31FBB3AE100C96E8B /* ViewControllerAdmin.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46589B21FBB3AE100C96E8B /* ViewControllerAdmin.swift */; };
+		A46589B51FBB3AFB00C96E8B /* ViewControllerCrous.swift in Sources */ = {isa = PBXBuildFile; fileRef = A46589B41FBB3AFB00C96E8B /* ViewControllerCrous.swift */; };
 		C0329F581FA65A4100419D01 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C0329F571FA65A4100419D01 /* MapKit.framework */; };
 		C0329F5D1FA65DB900419D01 /* ViewControllerCarte.swift in Sources */ = {isa = PBXBuildFile; fileRef = C0329F5C1FA65DB900419D01 /* ViewControllerCarte.swift */; };
 		F744F0A51F9A1F17009C9A9B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F744F0A41F9A1F17009C9A9B /* AppDelegate.swift */; };
@@ -40,6 +42,8 @@
 
 /* Begin PBXFileReference section */
 		616D1B151F9F6EEB00DA114D /* ViewControllerSport.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerSport.swift; sourceTree = "<group>"; };
+		A46589B21FBB3AE100C96E8B /* ViewControllerAdmin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerAdmin.swift; sourceTree = "<group>"; };
+		A46589B41FBB3AFB00C96E8B /* ViewControllerCrous.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerCrous.swift; sourceTree = "<group>"; };
 		C0329F571FA65A4100419D01 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		C0329F5C1FA65DB900419D01 /* ViewControllerCarte.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerCarte.swift; sourceTree = "<group>"; };
 		F744F0A11F9A1F17009C9A9B /* UAG.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UAG.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -122,6 +126,8 @@
 				F744F0A61F9A1F17009C9A9B /* ViewController.swift */,
 				F744F0A81F9A1F17009C9A9B /* Main.storyboard */,
 				C0329F5C1FA65DB900419D01 /* ViewControllerCarte.swift */,
+				A46589B21FBB3AE100C96E8B /* ViewControllerAdmin.swift */,
+				A46589B41FBB3AFB00C96E8B /* ViewControllerCrous.swift */,
 				616D1B151F9F6EEB00DA114D /* ViewControllerSport.swift */,
 				F744F0AB1F9A1F17009C9A9B /* Assets.xcassets */,
 				F744F0AD1F9A1F17009C9A9B /* LaunchScreen.storyboard */,
@@ -300,8 +306,10 @@
 				F744F0A71F9A1F17009C9A9B /* ViewController.swift in Sources */,
 				616D1B161F9F6EEB00DA114D /* ViewControllerSport.swift in Sources */,
 				C0329F5D1FA65DB900419D01 /* ViewControllerCarte.swift in Sources */,
+				A46589B31FBB3AE100C96E8B /* ViewControllerAdmin.swift in Sources */,
 				F7784C031FB2085200292D73 /* AlertControllerWithImage.swift in Sources */,
 				F744F0A51F9A1F17009C9A9B /* AppDelegate.swift in Sources */,
+				A46589B51FBB3AFB00C96E8B /* ViewControllerCrous.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
