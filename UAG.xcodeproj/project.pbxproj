@@ -19,6 +19,8 @@
 		F744F0C51F9A1F17009C9A9B /* UAGUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F744F0C41F9A1F17009C9A9B /* UAGUITests.swift */; };
 		F7784C031FB2085200292D73 /* AlertControllerWithImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7784C021FB2085200292D73 /* AlertControllerWithImage.swift */; };
 		F7784C051FB212D800292D73 /* ImageResize.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7784C041FB212D800292D73 /* ImageResize.swift */; };
+		F7CF3EBF1FBB2CF800EB4918 /* modeleDonnees.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7CF3EBE1FBB2CF800EB4918 /* modeleDonnees.swift */; };
+		F7CF3EC11FBB368700EB4918 /* Donnees.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7CF3EC01FBB368700EB4918 /* Donnees.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +59,8 @@
 		F744F0C61F9A1F17009C9A9B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F7784C021FB2085200292D73 /* AlertControllerWithImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertControllerWithImage.swift; sourceTree = "<group>"; };
 		F7784C041FB212D800292D73 /* ImageResize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageResize.swift; sourceTree = "<group>"; };
+		F7CF3EBE1FBB2CF800EB4918 /* modeleDonnees.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = modeleDonnees.swift; sourceTree = "<group>"; };
+		F7CF3EC01FBB368700EB4918 /* Donnees.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Donnees.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +121,7 @@
 		F744F0A31F9A1F17009C9A9B /* UAG */ = {
 			isa = PBXGroup;
 			children = (
+				F7CF3EBD1FBB2C5D00EB4918 /* ModeleDonnees */,
 				F7784C011FB2081F00292D73 /* Extensions */,
 				F744F0A41F9A1F17009C9A9B /* AppDelegate.swift */,
 				F744F0A61F9A1F17009C9A9B /* ViewController.swift */,
@@ -155,6 +160,15 @@
 				F7784C021FB2085200292D73 /* AlertControllerWithImage.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		F7CF3EBD1FBB2C5D00EB4918 /* ModeleDonnees */ = {
+			isa = PBXGroup;
+			children = (
+				F7CF3EBE1FBB2CF800EB4918 /* modeleDonnees.swift */,
+				F7CF3EC01FBB368700EB4918 /* Donnees.swift */,
+			);
+			path = ModeleDonnees;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -296,9 +310,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F7CF3EBF1FBB2CF800EB4918 /* modeleDonnees.swift in Sources */,
 				F7784C051FB212D800292D73 /* ImageResize.swift in Sources */,
 				F744F0A71F9A1F17009C9A9B /* ViewController.swift in Sources */,
 				616D1B161F9F6EEB00DA114D /* ViewControllerSport.swift in Sources */,
+				F7CF3EC11FBB368700EB4918 /* Donnees.swift in Sources */,
 				C0329F5D1FA65DB900419D01 /* ViewControllerCarte.swift in Sources */,
 				F7784C031FB2085200292D73 /* AlertControllerWithImage.swift in Sources */,
 				F744F0A51F9A1F17009C9A9B /* AppDelegate.swift in Sources */,

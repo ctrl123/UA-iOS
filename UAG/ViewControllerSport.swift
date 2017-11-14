@@ -27,23 +27,39 @@ class ViewControllerSport: UIViewController, UITableViewDataSource, UITableViewD
     
     //fonction qui gère la popup de chaque élément de la tableView
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
+        /*
         let alertController = UIAlertController(
             title: dataID[indexPath.row],
-            message: "\(data[dataID[indexPath.row]] ?? "reponse").",
+            message: "\(data[dataID[indexPath.row]] ?? "reponse not found").",
             preferredStyle: .alert) // ou .actionSheet
         
         //alertController.view.backgroundColor = UIColor.cyan
         
-        let img = UIImage(named: "UA-Guid_logotest5")
-        alertController.addImage(image: img!)
+        if (data[dataID[indexPath.row]]?.contains(".png"))! {
+            let imagetest = UIImage(named: "\(data[dataID[indexPath.row]] ?? "HomeIcon")")
+            alertController.addImage(image: imagetest!)
+        }else{
+            let img = UIImage(named: "UA-Guid_logo")
+            alertController.addImage(image: img!)
+        }
         
         let alertAction = UIAlertAction(title: "Compris.", style: .default, handler: nil)
         alertController.addAction(alertAction)
         
-        self.present(alertController, animated: true, completion: nil)
+        self.present(alertController, animated: true, completion: nil)*/
+        //let data = dataID[indexPath.row]
         
+        infoViewImage.image = UIImage(named: "UA-Guid_logo")
+        infoViewLabel.text = dataID[indexPath.row]
+        infoViewLabelText.text = data[dataID[indexPath.row]]
+        infoView.center = view.center
+        view.addSubview(infoView)
     }
+ 
+    @IBAction func closeInfoView(_ sender: Any) {
+        infoView.removeFromSuperview()
+    }
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -53,6 +69,8 @@ class ViewControllerSport: UIViewController, UITableViewDataSource, UITableViewD
         for cle in data.keys{
             dataID.append(cle)
         }
+        dataID.sort() //pour trier les questions
+ 
         
         tableViewSport.dataSource = self //permet de gerer les sources de la tableView
         tableViewSport.delegate = self //permet de configurer le systeme de popup du tableView
@@ -71,25 +89,33 @@ class ViewControllerSport: UIViewController, UITableViewDataSource, UITableViewD
     
     @IBOutlet weak var tableViewSport: UITableView!
     
+    //outlets de l'infoView (popup)
+    @IBOutlet var infoView: UIView!
+    @IBOutlet weak var infoViewLabel: UILabel!
+    @IBOutlet weak var infoViewLabelText: UILabel!
+    
+    @IBOutlet weak var infoViewImage: UIImageView!
+    
     // dictionnaire contenuant les informations, question : reponse
     private var data: [String:String] = [
         "Ou faire du sport?": "Au SUAPS",
         "Ou s'inscrire?": "Toujours au SUAPS",
         "Ou est le SUAPS?": "Va zyeuter la carte",
+        "Horaires de la salle de sport": "CréneauxSalleMuscu.png",
         "Question1": "Reponse",
         "Question2": "Reponse",
         "Question3": "Reponse",
         "Question4": "Reponse",
         "Question5": "Reponse",
         "Question6": "Reponse",
-        "Question7": "Reponse",
-        "Question8": "Reponse"
+        "Question7": "Reponse"
     ]
     
     // Tableau de String vide
     private var dataID = [String]()
-    
+ 
     //indique le nombre de section dans la tableView, il y en a qu'1
+    
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
