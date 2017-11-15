@@ -9,6 +9,11 @@
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="TrebuchetMS.ttf">
+            <string>TrebuchetMS</string>
+        </array>
+    </customFonts>
     <scenes>
         <!--Scolaire-->
         <scene sceneID="184-Ol-P6m">
@@ -239,10 +244,53 @@
                     </view>
                     <connections>
                         <outlet property="background_sport" destination="gFA-Gs-Chj" id="MqO-E6-lcB"/>
+                        <outlet property="infoView" destination="S82-Ne-X63" id="uvW-Lg-qmj"/>
+                        <outlet property="infoViewImage" destination="66P-pd-kHl" id="2nn-TN-kNb"/>
+                        <outlet property="infoViewLabel" destination="URd-9e-aKP" id="Lbc-Y7-CTY"/>
+                        <outlet property="infoViewLabelText" destination="1uC-lY-1bz" id="QIr-du-2Jn"/>
                         <outlet property="tableViewSport" destination="BfB-A8-k0F" id="Dyk-9g-Ueq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xY7-E5-gfd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <view contentMode="scaleToFill" id="S82-Ne-X63">
+                    <rect key="frame" x="0.0" y="0.0" width="288" height="426"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="66P-pd-kHl">
+                            <rect key="frame" x="0.0" y="49" width="288" height="259"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="URd-9e-aKP">
+                            <rect key="frame" x="16" y="0.0" width="256" height="49"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="20"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1uC-lY-1bz">
+                            <rect key="frame" x="16" y="316" width="256" height="64"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                            <size key="shadowOffset" width="0.0" height="0.0"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5oI-gm-B2v">
+                            <rect key="frame" x="121" y="383" width="46" height="43"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                            <size key="titleShadowOffset" width="15" height="15"/>
+                            <state key="normal" title="X">
+                                <color key="titleColor" red="0.76491314170000002" green="0.72704201940000002" blue="0.013468424790000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="closeInfoView:" destination="T2Z-wi-1o3" eventType="touchUpInside" id="4Fd-SE-8Po"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <viewLayoutGuide key="safeArea" id="0Nt-jd-Tgq"/>
+                </view>
             </objects>
             <point key="canvasLocation" x="2313.75" y="117.25352112676056"/>
         </scene>
