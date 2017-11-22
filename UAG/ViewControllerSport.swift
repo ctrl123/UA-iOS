@@ -116,8 +116,8 @@ class ViewControllerSport: UIViewController, UITableViewDataSource, UITableViewD
     private var data: [String:String] = [
         "Ou faire du sport?": "Au SUAPS",
         "Comment s'inscrire?": "Il faut aller récuperer et remplir la fiche de renseignement du SUAPS.",
-        "Ou est le SUAPS?": "#sportToCarte",
-        "Horaires de la salle de sport": "CréneauxSalleMuscu.png",
+        "Ou est le Hall des sports?": "#sportToCarte",
+        "Horaires de la salle de musculation": "CréneauxSalleMuscu.png",
         "Question1": "Reponse",
         "Question2": "Reponse",
         "Question3": "Reponse",
