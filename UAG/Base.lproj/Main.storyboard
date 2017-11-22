@@ -88,7 +88,7 @@
                                 <attributedString key="attributedText">
                                     <fragment content="UG : UA-Guid">
                                         <attributes>
-                                            <color key="NSColor" red="0.0" green="0.40515067428551932" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <font key="NSFont" size="21" name="Impact"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
@@ -142,8 +142,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Accueil" id="dla-gp-vns"/>
                     <connections>
-                        <outlet property="bouton_S_fonc" destination="hWC-3D-YgR" id="KWc-Qg-44K"/>
-                        <outlet property="bouton_Sp_fonc" destination="IiI-9W-Xrv" id="brD-MB-cty"/>
+                        <outlet property="Nom_app" destination="4e0-PK-j8L" id="5Qx-Nr-U2T"/>
                         <outlet property="indication" destination="N7v-H2-OwU" id="AwI-Qz-gqV"/>
                         <outlet property="interface_acceuil" destination="uYF-wk-spF" id="3zI-w7-Pus"/>
                         <outlet property="jour_nuit" destination="x2W-2M-pY0" id="ZLW-2w-ugM"/>

@@ -19,9 +19,9 @@ class ViewController: UIViewController {
     @IBOutlet weak var indication: UILabel!
     @IBOutlet weak var interface_acceuil: UIImageView!
     @IBOutlet weak var jour_nuit: UISegmentedControl!
+    @IBOutlet weak var Nom_app: UILabel!
     
-    @IBOutlet weak var bouton_Sp_fonc: UIButton!
-    @IBOutlet weak var bouton_S_fonc: UIButton!
+    
     
     
     override func viewDidLoad() {
@@ -65,10 +65,13 @@ class ViewController: UIViewController {
             interface_acceuil.image = #imageLiteral(resourceName: "launch_screen")
             modeJN = true
             indication.textColor = UIColor.white
+            Nom_app.textColor = UIColor.white
         }
         else {
             interface_acceuil.image = #imageLiteral(resourceName: "interface_base")
             modeJN = false
+            indication.textColor = UIColor.black
+            Nom_app.textColor = UIColor.white
         }
     }
     //Envoie linformation que l'inrerface est changé a chaque ViewControlelr
