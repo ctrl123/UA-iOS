@@ -49,14 +49,36 @@ class ViewControllerSport: UIViewController, UITableViewDataSource, UITableViewD
         self.present(alertController, animated: true, completion: nil)*/
         //let data = dataID[indexPath.row]
         
-        infoViewImage.image = UIImage(named: "UA-Guid_logo")
+        /*
+         Si la reponse est une image (contient une extension png ou jpg)
+         l'image est affichée et le texte est vidé,
+         sinon le texte est affiché et l'image est reset.
+         */
+        if (data[dataID[indexPath.row]]?.contains(".png"))!
+            || (data[dataID[indexPath.row]]?.contains("jpg"))! {
+            infoViewImage.image = UIImage(named: "\(data[dataID[indexPath.row]] ?? "UA-Guid-logo")")
+            infoViewLabelText.text = ""
+            showCarte.isHidden = true
+        }else if (data[dataID[indexPath.row]]?.contains("#sportToCarte"))! {
+            infoViewLabelText.text = ""
+            infoViewImage.image = nil
+            showCarte.isHidden = false
+        }else{
+            infoViewLabelText.text = data[dataID[indexPath.row]]
+            infoViewImage.image = nil
+            showCarte.isHidden = true
+        }
+        
+        //affiche la question de la popup
         infoViewLabel.text = dataID[indexPath.row]
-        infoViewLabelText.text = data[dataID[indexPath.row]]
+        //Corrige le centre du subView
         infoView.center = view.center
+        //Ajoute le subView au superView (ViewControllerSport)
         view.addSubview(infoView)
     }
  
     @IBAction func closeInfoView(_ sender: Any) {
+        //Bouton X, supprime la subView du viewControllerSport
         infoView.removeFromSuperview()
     }
     
@@ -66,6 +88,8 @@ class ViewControllerSport: UIViewController, UITableViewDataSource, UITableViewD
         
         //crée un index avec les clés du dictionnaire dans le tableau vide
         //Pour ne pas a le faire manuellement, lors de l'initialisation
+        showCarte.isHidden = true
+        
         for cle in data.keys{
             dataID.append(cle)
         }
@@ -96,11 +120,17 @@ class ViewControllerSport: UIViewController, UITableViewDataSource, UITableViewD
     
     @IBOutlet weak var infoViewImage: UIImageView!
     
+    @IBOutlet weak var showCarte: UIButton!
+    @IBAction func btnShowCarte(_ sender: Any) {
+        performSegue(withIdentifier: "sportToCarte", sender: sender)
+    }
+    
+    
     // dictionnaire contenuant les informations, question : reponse
     private var data: [String:String] = [
         "Ou faire du sport?": "Au SUAPS",
-        "Ou s'inscrire?": "Toujours au SUAPS",
-        "Ou est le SUAPS?": "Va zyeuter la carte",
+        "Comment s'inscrire?": "Il faut aller récuperer et remplir la fiche de renseignement du SUAPS.",
+        "Ou est le SUAPS?": "#sportToCarte",
         "Horaires de la salle de sport": "CréneauxSalleMuscu.png",
         "Question1": "Reponse",
         "Question2": "Reponse",
