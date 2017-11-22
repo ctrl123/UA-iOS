@@ -13,6 +13,15 @@ var modeJN: Bool = false
 class ViewControllerCarte: UIViewController {
 
     
+   
+    @IBOutlet weak var StandardSatellite: UISegmentedControl!
+    @IBAction func ModeCarte(_ sender: UISegmentedControl) {
+        if StandardSatellite.selectedSegmentIndex == 0 {
+            Carte.mapType = MKMapType.standard
+        } else {
+            Carte.mapType = MKMapType.hybridFlyover
+        }
+    }
     
     @IBOutlet weak var Carte: MKMapView!
     var BoutonMainCrous = Bool()

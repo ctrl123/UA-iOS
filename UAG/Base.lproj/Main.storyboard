@@ -207,7 +207,7 @@
                                 </segments>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <connections>
-                                    <action selector="ModeCarte:" destination="SzC-zR-og6" eventType="valueChanged" id="1Qf-Gh-gP3"/>
+                                    <action selector="ModeCarte:" destination="SzC-zR-og6" eventType="valueChanged" id="Dc8-3o-5gn"/>
                                 </connections>
                             </segmentedControl>
                         </subviews>
@@ -225,7 +225,7 @@
                     </view>
                     <connections>
                         <outlet property="Carte" destination="bIj-IU-Mme" id="Oo6-60-CjR"/>
-                        <outlet property="StandardSatellite" destination="OHw-wA-C9n" id="wcY-9Z-Q0w"/>
+                        <outlet property="StandardSatellite" destination="OHw-wA-C9n" id="IR6-St-5kt"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="h3q-jK-rh8" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -356,6 +356,6 @@
         <image name="interface_sport_bas" width="768" height="1280"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="i5t-2H-Oex"/>
+        <segue reference="hGv-P5-9wJ"/>
     </inferredMetricsTieBreakers>
 </document>
