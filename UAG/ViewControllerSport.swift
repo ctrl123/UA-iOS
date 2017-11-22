@@ -10,6 +10,9 @@ import UIKit
 
 class ViewControllerSport: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
+    var modeJN: Bool = false
+    
+    
     //SEGUE POUR CARTE (zoomé sur Hall des sports)
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let ViewControllerCarte = segue.destination as! ViewControllerCarte
@@ -70,7 +73,11 @@ class ViewControllerSport: UIViewController, UITableViewDataSource, UITableViewD
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        if modeJN == true{
+            background_sport.image = #imageLiteral(resourceName: "launch_screen")
+        } else {
+            background_sport.image = #imageLiteral(resourceName: "interface_sport_bas")
+        }
         //crée un index avec les clés du dictionnaire dans le tableau vide
         //Pour ne pas a le faire manuellement, lors de l'initialisation
         for cle in data.keys{
@@ -126,7 +133,6 @@ class ViewControllerSport: UIViewController, UITableViewDataSource, UITableViewD
     func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
-    
     
     
     /*

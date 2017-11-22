@@ -8,9 +8,12 @@
 
 import UIKit
 import MapKit
+var modeJN: Bool = false
 
 class ViewControllerCarte: UIViewController {
 
+    
+    
     @IBOutlet weak var Carte: MKMapView!
     var BoutonMainCrous = Bool()
     var BoutonMainSport = Bool()
