@@ -71,7 +71,7 @@ class ViewController: UIViewController {
             interface_acceuil.image = #imageLiteral(resourceName: "interface_base")
             modeJN = false
             indication.textColor = UIColor.black
-            Nom_app.textColor = UIColor.white
+            Nom_app.textColor = UIColor.black
         }
     }
     //Envoie linformation que l'inrerface est changé a chaque ViewControlelr

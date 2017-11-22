@@ -11,8 +11,10 @@ import UIKit
 class ViewControllerAdmin: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
     
-    @IBOutlet weak var background_scolaire: UIImageView!
+    
+    
     var modeJN: Bool = false
+    
     //SEGUE POUR CARTE (zoomé sur Administration)
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let ViewControllerCarte = segue.destination as! ViewControllerCarte
@@ -75,6 +77,11 @@ class ViewControllerAdmin: UIViewController, UITableViewDataSource, UITableViewD
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        if modeJN == false {
+            background_Scolaire.image = #imageLiteral(resourceName: "interface_base")
+        } else if modeJN == true {
+            background_Scolaire.image = #imageLiteral(resourceName: "launch_screen")
+        }
         //crée un index avec les clés du dictionnaire dans le tableau vide
         //Pour ne pas a le faire manuellement, lors de l'initialisation
         showCarte.isHidden = true

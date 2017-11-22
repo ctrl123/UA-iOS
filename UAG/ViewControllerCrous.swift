@@ -9,7 +9,7 @@
 import UIKit
 
 class ViewControllerCrous: UIViewController, UITableViewDataSource, UITableViewDelegate {
-    
+    var modeJN: Bool = false
     //SEGUE POUR CARTE (zoomé sur Crous)
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let ViewControllerCarte = segue.destination as! ViewControllerCarte
@@ -71,6 +71,12 @@ class ViewControllerCrous: UIViewController, UITableViewDataSource, UITableViewD
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        if modeJN == false {
+            background_crous.image = #imageLiteral(resourceName: "interface_crous_bas")
+        } else if modeJN == true {
+            background_crous.image = #imageLiteral(resourceName: "launch_screen")
+        }
         
         //crée un index avec les clés du dictionnaire dans le tableau vide
         //Pour ne pas a le faire manuellement, lors de l'initialisation
