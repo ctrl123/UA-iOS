@@ -59,9 +59,15 @@ class ViewControllerCarte: UIViewController {
         
         UAPin.title = "UA"
         UAPin.subtitle = "Université des Antilles"
+        CrousPin.title = "CROUS / CLOUS"
+        CrousPin.subtitle = "Logements universitaire"
+        SportPin.title = "Sport"
+        SportPin.subtitle = "Terrain/Gymnase"
+        AdminPin.title = "Administration universitaire"
         
         Carte.addAnnotation(UAPin)
-        
+        Carte.addAnnotation(CrousPin)
+
     }
 
     override func didReceiveMemoryWarning() {
