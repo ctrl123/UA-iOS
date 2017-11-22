@@ -262,17 +262,19 @@
                         <outlet property="infoViewImage" destination="66P-pd-kHl" id="2nn-TN-kNb"/>
                         <outlet property="infoViewLabel" destination="URd-9e-aKP" id="Lbc-Y7-CTY"/>
                         <outlet property="infoViewLabelText" destination="1uC-lY-1bz" id="QIr-du-2Jn"/>
+                        <outlet property="showCarte" destination="Mxf-mQ-mPM" id="X7H-AZ-Xta"/>
                         <outlet property="tableViewSport" destination="BfB-A8-k0F" id="Dyk-9g-Ueq"/>
+                        <segue destination="SzC-zR-og6" kind="show" identifier="sportToCarte" id="i5t-2H-Oex"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xY7-E5-gfd" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <view contentMode="scaleToFill" id="S82-Ne-X63">
-                    <rect key="frame" x="0.0" y="0.0" width="288" height="426"/>
+                    <rect key="frame" x="0.0" y="0.0" width="288" height="431"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <subviews>
                         <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="66P-pd-kHl">
-                            <rect key="frame" x="0.0" y="49" width="288" height="259"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <rect key="frame" x="0.0" y="49" width="288" height="312"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
                         </imageView>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="URd-9e-aKP">
                             <rect key="frame" x="16" y="0.0" width="256" height="49"/>
@@ -281,17 +283,17 @@
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1uC-lY-1bz">
-                            <rect key="frame" x="16" y="316" width="256" height="64"/>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="15" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1uC-lY-1bz">
+                            <rect key="frame" x="16" y="49" width="256" height="312"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxY="YES"/>
-                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <fontDescription key="fontDescription" name="TrebuchetMS" family="Trebuchet MS" pointSize="17"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                             <size key="shadowOffset" width="0.0" height="0.0"/>
                         </label>
                         <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5oI-gm-B2v">
                             <rect key="frame" x="121" y="383" width="46" height="43"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMinY="YES"/>
                             <fontDescription key="fontDescription" type="system" pointSize="30"/>
                             <size key="titleShadowOffset" width="15" height="15"/>
                             <state key="normal" title="X">
@@ -299,6 +301,14 @@
                             </state>
                             <connections>
                                 <action selector="closeInfoView:" destination="T2Z-wi-1o3" eventType="touchUpInside" id="4Fd-SE-8Po"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mxf-mQ-mPM">
+                            <rect key="frame" x="16" y="169" width="256" height="72"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <state key="normal" title="Voir la carte"/>
+                            <connections>
+                                <action selector="btnShowCarte:" destination="T2Z-wi-1o3" eventType="touchUpInside" id="od7-vj-r6W"/>
                             </connections>
                         </button>
                     </subviews>
@@ -337,4 +347,7 @@
         <image name="interface_crous_bas" width="768" height="1280"/>
         <image name="interface_sport_bas" width="768" height="1280"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="i5t-2H-Oex"/>
+    </inferredMetricsTieBreakers>
 </document>
