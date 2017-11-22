@@ -189,6 +189,19 @@
                                     <constraint firstAttribute="width" secondItem="bIj-IU-Mme" secondAttribute="height" multiplier="160:219" id="kDc-qo-NUn"/>
                                 </constraints>
                             </mapView>
+                            <segmentedControl contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="OHw-wA-C9n">
+                                <rect key="frame" x="76" y="510" width="169" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <segments>
+                                    <segment title="Standard"/>
+                                    <segment title="Satellite"/>
+                                </segments>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <action selector="ModeCarte:" destination="SzC-zR-og6" eventType="valueChanged" id="1Qf-Gh-gP3"/>
+                                </connections>
+                            </segmentedControl>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -204,6 +217,7 @@
                     </view>
                     <connections>
                         <outlet property="Carte" destination="bIj-IU-Mme" id="Oo6-60-CjR"/>
+                        <outlet property="StandardSatellite" destination="OHw-wA-C9n" id="wcY-9Z-Q0w"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="h3q-jK-rh8" userLabel="First Responder" sceneMemberID="firstResponder"/>
