@@ -8,14 +8,17 @@
 
 import UIKit
 import MapKit
+var modeJN: Bool = false
 
 class ViewControllerCarte: UIViewController {
+
     
+   
     @IBOutlet weak var StandardSatellite: UISegmentedControl!
     @IBAction func ModeCarte(_ sender: UISegmentedControl) {
-        if StandardSatellite.selectedSegmentIndex == 0{
+        if StandardSatellite.selectedSegmentIndex == 0 {
             Carte.mapType = MKMapType.standard
-        }else{
+        } else {
             Carte.mapType = MKMapType.hybridFlyover
         }
     }
@@ -69,10 +72,11 @@ class ViewControllerCarte: UIViewController {
         CrousPin.subtitle = "Logements universitaire"
         SportPin.title = "Sport"
         SportPin.subtitle = "Terrain/Gymnase"
-        AdminPin.title = "Administration universitaire"
+        AdminPin.title = "Administration & SUAPS"
         
         Carte.addAnnotation(UAPin)
         Carte.addAnnotation(CrousPin)
+        Carte.addAnnotation(AdminPin)
 
     }
 

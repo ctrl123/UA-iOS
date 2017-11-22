@@ -23,7 +23,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="interface_base" translatesAutoresizingMaskIntoConstraints="NO" id="46x-1C-eEY">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="interface_base" translatesAutoresizingMaskIntoConstraints="NO" id="46x-1C-eEY" userLabel="background scolaire">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -128,40 +128,28 @@
                                 <color key="textColor" red="1" green="0.99549228830000003" blue="0.89446103899999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hWC-3D-YgR">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hWC-3D-YgR" userLabel="Button_Scolaire">
                                 <rect key="frame" x="127" y="237" width="67" height="67"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="bouton_scolarité"/>
                                 <connections>
                                     <action selector="button_scolaire:" destination="5ys-jx-gN1" eventType="touchUpInside" id="0Ni-7p-4bV"/>
-                                    <segue destination="DfO-Ao-Dmq" kind="show" identifier="goto_scolaire" id="Ze5-UZ-auc"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aPS-qd-cKM">
-                                <rect key="frame" x="63" y="301" width="67" height="67"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button" image="bouton_crous"/>
-                                <connections>
-                                    <action selector="button_carte:" destination="5ys-jx-gN1" eventType="touchUpInside" id="tbX-75-YQz"/>
-                                    <segue destination="Rxx-Ok-dcf" kind="show" identifier="goto_crous" id="Xde-Ee-qPZ"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OPr-fJ-Xom">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OPr-fJ-Xom" userLabel="Button_Carte">
                                 <rect key="frame" x="127" y="367" width="67" height="67"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="bouton_carte"/>
                                 <connections>
                                     <action selector="button_carte:" destination="5ys-jx-gN1" eventType="touchUpInside" id="Fla-gk-opf"/>
-                                    <segue destination="SzC-zR-og6" kind="show" identifier="goto_carte" id="Yk2-k7-z2H"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IiI-9W-Xrv">
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IiI-9W-Xrv" userLabel="Button_Sport">
                                 <rect key="frame" x="202" y="301" width="67" height="67"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="bouton_sport"/>
                                 <connections>
                                     <action selector="button_sport:" destination="5ys-jx-gN1" eventType="touchUpInside" id="1bT-TL-Ss3"/>
-                                    <segue destination="T2Z-wi-1o3" kind="show" identifier="goto_sport" id="FBf-dF-7dq"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4e0-PK-j8L">
@@ -170,7 +158,7 @@
                                 <attributedString key="attributedText">
                                     <fragment content="UG : UA-Guid">
                                         <attributes>
-                                            <color key="NSColor" red="0.0" green="0.40515067428551932" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <font key="NSFont" size="21" name="Impact"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
@@ -210,14 +198,28 @@
                                     <action selector="jour_nuit:" destination="5ys-jx-gN1" eventType="touchUpInside" id="bHD-ZU-gMc"/>
                                 </connections>
                             </segmentedControl>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="455-i9-NtV" userLabel="Button_Crous">
+                                <rect key="frame" x="59" y="301" width="67" height="67"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="bouton_crous"/>
+                                <connections>
+                                    <action selector="bouton_crous:" destination="5ys-jx-gN1" eventType="touchUpInside" id="YKY-ci-wWb"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <viewLayoutGuide key="safeArea" id="saN-gp-U5r"/>
                     </view>
                     <navigationItem key="navigationItem" title="Accueil" id="dla-gp-vns"/>
                     <connections>
+                        <outlet property="Nom_app" destination="4e0-PK-j8L" id="5Qx-Nr-U2T"/>
+                        <outlet property="indication" destination="N7v-H2-OwU" id="AwI-Qz-gqV"/>
                         <outlet property="interface_acceuil" destination="uYF-wk-spF" id="3zI-w7-Pus"/>
                         <outlet property="jour_nuit" destination="x2W-2M-pY0" id="ZLW-2w-ugM"/>
+                        <segue destination="DfO-Ao-Dmq" kind="show" identifier="goto_scolaire" id="tQP-te-pKX"/>
+                        <segue destination="T2Z-wi-1o3" kind="show" identifier="goto_sport" id="my7-p1-VnL"/>
+                        <segue destination="SzC-zR-og6" kind="show" identifier="goto_carte" id="hGv-P5-9wJ"/>
+                        <segue destination="Rxx-Ok-dcf" kind="show" identifier="goto_crous" id="PTN-WU-7lc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uFE-Nr-SBP" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -232,7 +234,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="interface_crous_bas" translatesAutoresizingMaskIntoConstraints="NO" id="sWq-06-Do6">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="interface_crous_bas" translatesAutoresizingMaskIntoConstraints="NO" id="sWq-06-Do6" userLabel="background crous">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -347,7 +349,7 @@
                                 </segments>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <connections>
-                                    <action selector="ModeCarte:" destination="SzC-zR-og6" eventType="valueChanged" id="1Qf-Gh-gP3"/>
+                                    <action selector="ModeCarte:" destination="SzC-zR-og6" eventType="valueChanged" id="Dc8-3o-5gn"/>
                                 </connections>
                             </segmentedControl>
                         </subviews>
@@ -365,7 +367,7 @@
                     </view>
                     <connections>
                         <outlet property="Carte" destination="bIj-IU-Mme" id="Oo6-60-CjR"/>
-                        <outlet property="StandardSatellite" destination="OHw-wA-C9n" id="wcY-9Z-Q0w"/>
+                        <outlet property="StandardSatellite" destination="OHw-wA-C9n" id="IR6-St-5kt"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="h3q-jK-rh8" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -464,7 +466,7 @@
                     <viewLayoutGuide key="safeArea" id="0Nt-jd-Tgq"/>
                 </view>
             </objects>
-            <point key="canvasLocation" x="2313.75" y="117.25352112676056"/>
+            <point key="canvasLocation" x="2869" y="135"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="6zi-fk-1Jn">

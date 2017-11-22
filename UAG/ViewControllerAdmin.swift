@@ -10,6 +10,9 @@ import UIKit
 
 class ViewControllerAdmin: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
+    
+    @IBOutlet weak var background_scolaire: UIImageView!
+    var modeJN: Bool = false
     //SEGUE POUR CARTE (zoomé sur Administration)
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         let ViewControllerCarte = segue.destination as! ViewControllerCarte
