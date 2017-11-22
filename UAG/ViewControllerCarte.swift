@@ -69,10 +69,11 @@ class ViewControllerCarte: UIViewController {
         CrousPin.subtitle = "Logements universitaire"
         SportPin.title = "Sport"
         SportPin.subtitle = "Terrain/Gymnase"
-        AdminPin.title = "Administration universitaire"
+        AdminPin.title = "Administration & SUAPS"
         
         Carte.addAnnotation(UAPin)
         Carte.addAnnotation(CrousPin)
+        Carte.addAnnotation(AdminPin)
 
     }
 
