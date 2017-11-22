@@ -42,7 +42,7 @@ class ViewControllerSport: UIViewController, UITableViewDataSource, UITableViewD
          */
         if (data[dataID[indexPath.row]]?.contains(".png"))!
             || (data[dataID[indexPath.row]]?.contains("jpg"))! {
-            infoViewImage.image = UIImage(named: "\(data[dataID[indexPath.row]] ?? "UA-Guid-logo")")
+            infoViewImage.image = UIImage(named: "\(data[dataID[indexPath.row]] ?? "UA-Guid_logo")")
             infoViewLabelText.text = ""
             showCarte.isHidden = true
         }else if (data[dataID[indexPath.row]]?.contains("#sportToCarte"))! {
@@ -114,11 +114,11 @@ class ViewControllerSport: UIViewController, UITableViewDataSource, UITableViewD
     
     // dictionnaire contenuant les informations, question : reponse
     private var data: [String:String] = [
-        "Ou faire du sport?": "Au SUAPS",
         "Comment s'inscrire?": "Il faut aller récuperer et remplir la fiche de renseignement du SUAPS.",
         "Ou est le Hall des sports?": "#sportToCarte",
         "Horaires de la salle de musculation": "CréneauxSalleMuscu.png",
-        "Question1": "Reponse",
+        "Quels sont les horaires des activités tutorat?": "tutorat.png",
+        "Quel est le planning de l'echange sportif?": "echangeSportif.png",
         "Question2": "Reponse",
         "Question3": "Reponse",
         "Question4": "Reponse",
