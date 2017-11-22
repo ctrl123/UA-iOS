@@ -34,32 +34,11 @@ class ViewControllerSport: UIViewController, UITableViewDataSource, UITableViewD
     
     //fonction qui gère la popup de chaque élément de la tableView
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        /*
-        let alertController = UIAlertController(
-            title: dataID[indexPath.row],
-            message: "\(data[dataID[indexPath.row]] ?? "reponse not found").",
-            preferredStyle: .alert) // ou .actionSheet
         
-        //alertController.view.backgroundColor = UIColor.cyan
-        
-        if (data[dataID[indexPath.row]]?.contains(".png"))! {
-            let imagetest = UIImage(named: "\(data[dataID[indexPath.row]] ?? "HomeIcon")")
-            alertController.addImage(image: imagetest!)
-        }else{
-            let img = UIImage(named: "UA-Guid_logo")
-            alertController.addImage(image: img!)
-        }
-        
-        let alertAction = UIAlertAction(title: "Compris.", style: .default, handler: nil)
-        alertController.addAction(alertAction)
-        
-        self.present(alertController, animated: true, completion: nil)*/
         //let data = dataID[indexPath.row]
         
         /*
-         Si la reponse est une image (contient une extension png ou jpg)
-         l'image est affichée et le texte est vidé,
-         sinon le texte est affiché et l'image est reset.
+         En fonction de la question, la réponse peut etre differente, et affichera soit une image, soit un bouton vers la carte, ou du texte de réponse et masquera les autres éléments de la popup
          */
         if (data[dataID[indexPath.row]]?.contains(".png"))!
             || (data[dataID[indexPath.row]]?.contains("jpg"))! {
