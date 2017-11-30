@@ -126,7 +126,7 @@ class ViewControllerSport: UIViewController, UITableViewDataSource, UITableViewD
         "Horaires de la salle de musculation": "CréneauxSalleMuscu.png",
         "Quels sont les horaires des activités tutorat?": "tutorat.png",
         "Quel est le planning de l'echange sportif?": "echangeSportif.png",
-        "Question2": "Reponse",
+        "Qui sont à la tête du SUAPS? ": "Simone FEDEE : \n Directrice SUAPS UAG \n MOLINIE Jack : \n VP conseil des sports",
         "Question3": "Reponse",
         "Question4": "Reponse",
         "Question5": "Reponse",
