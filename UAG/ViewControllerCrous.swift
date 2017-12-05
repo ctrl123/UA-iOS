@@ -75,7 +75,7 @@ class ViewControllerCrous: UIViewController, UITableViewDataSource, UITableViewD
         if modeJN == false {
             background_crous.image = #imageLiteral(resourceName: "interface_crous_bas")
         } else if modeJN == true {
-            background_crous.image = #imageLiteral(resourceName: "launch_screen")
+            background_crous.image = #imageLiteral(resourceName: "interface_crous_bas_nuit")
         }
         
         //crée un index avec les clés du dictionnaire dans le tableau vide
