@@ -75,7 +75,7 @@ class ViewControllerSport: UIViewController, UITableViewDataSource, UITableViewD
     override func viewDidLoad() {
         super.viewDidLoad()
         if modeJN == true{
-            background_sport.image = #imageLiteral(resourceName: "launch_screen")
+            background_sport.image = #imageLiteral(resourceName: "interface_sport_bas_nuit")
         } else {
             background_sport.image = #imageLiteral(resourceName: "interface_sport_bas")
         }
