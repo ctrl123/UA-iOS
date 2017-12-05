@@ -44,7 +44,7 @@ class ViewControllerCarte: UIViewController {
         
         // COORDONNEES PAR DEFAUT DE LA CARTE ET DES SERVICES
         let UAregion = MKCoordinateRegion(center: UALocation, span: UAspan)
-        let CrousRegion = MKCoordinateRegion(center: SportLocation, span: Servicespan)
+        let CrousRegion = MKCoordinateRegion(center: CrousLocation, span: Servicespan)
         let SportRegion = MKCoordinateRegion(center: SportLocation, span: Servicespan)
         let AdminRegion = MKCoordinateRegion(center: AdminLocation, span: Servicespan)
 
@@ -87,6 +87,7 @@ class ViewControllerCarte: UIViewController {
         Carte.addAnnotation(UAPin)
         Carte.addAnnotation(CrousPin)
         Carte.addAnnotation(AdminPin)
+        Carte.addAnnotation(SportPin)
 
     }
 
