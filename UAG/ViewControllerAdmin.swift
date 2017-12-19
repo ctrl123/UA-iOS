@@ -127,7 +127,7 @@ class ViewControllerAdmin: UIViewController, UITableViewDataSource, UITableViewD
     private var data: [String:String] = [
         "Image": "UA-Guid_logo.png",
         "Bouton vers la carte": "#scolaireToCarte",
-        "0Read Me": "Yo vla, il suffit de d'ajouter les question reponse maintenant. Attention il ne faut pas qu'il y ai pluysieurs fois la meme question",
+        "0Read Me": "Voila, il suffit de d'ajouter les question/reponse maintenant. Attention il ne faut pas qu'il y ai plusieurs fois la meme question",
         "Question": "Reponse",
         "Question1": "Reponse",
         "Question2": "Reponse",

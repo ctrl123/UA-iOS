@@ -49,7 +49,7 @@ class ViewControllerSport: UIViewController, UITableViewDataSource, UITableViewD
             infoViewLabelText.text = ""
             showCarte.isHidden = true
         }else if (data[dataID[indexPath.row]]?.contains("#sportToCarte"))! {
-            infoViewLabelText.text = ""
+            infoViewLabelText.text = "Cliquez pour accéder à la carte:"
             infoViewImage.image = nil
             showCarte.isHidden = false
         }else{
@@ -74,6 +74,7 @@ class ViewControllerSport: UIViewController, UITableViewDataSource, UITableViewD
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        //Permet de verifier et changer le bcakground selon l'activation du mode jour/nuit
         if modeJN == true{
             background_sport.image = #imageLiteral(resourceName: "interface_sport_bas_nuit")
         } else {
@@ -122,16 +123,15 @@ class ViewControllerSport: UIViewController, UITableViewDataSource, UITableViewD
     // dictionnaire contenuant les informations, question : reponse
     private var data: [String:String] = [
         "Comment s'inscrire?": "Il faut aller récuperer et remplir la fiche de renseignement du SUAPS.",
+        "Ou récuperer la fiche d'inscription?": "Vous pouvez la récuperer directement au SUAPS.",
+        "Ou remettre la fiche?": "Au même endroit ou vous l'avez récupéré.",
         "Ou est le Hall des sports?": "#sportToCarte",
-        "Horaires de la salle de musculation": "CréneauxSalleMuscu.png",
-        "Quels sont les horaires des activités tutorat?": "tutorat.png",
-        "Quel est le planning de l'echange sportif?": "echangeSportif.png",
+        "Horaires de la salle de musculation.": "CréneauxSalleMuscu.png",
+        "Horaires des activités tutorat.": "Mardi : 18-20h Beach Volley \nMercredi : 18-20h Sandball, Danse traditionnelle, Badminton \nJeudi : 18-20h Beach soccer, Danses modern Jazz \nLes matins : Tennis",
+        "Planning de l'échange sportif?": "echangeSportif.png",
         "Qui sont à la tête du SUAPS? ": "Simone FEDEE : \n Directrice SUAPS UAG \n MOLINIE Jack : \n VP conseil des sports",
-        "Question3": "Reponse",
-        "Question4": "Reponse",
-        "Question5": "Reponse",
-        "Question6": "Reponse",
-        "Question7": "Reponse"
+        "Actualité du SUAPS?": "Vous pouvez suivre leurs actualités la page Facebook du SUAPS",
+        "Vous ne trouvez pas l'information que vous recherchez?": "Veuillez demander à d'autres étudiants, ou nous contacter à : UAGuid@exempleMail.com"
     ]
     
     // Tableau de String vide
