@@ -124,18 +124,19 @@ class ViewControllerAdmin: UIViewController, UITableViewDataSource, UITableViewD
     
     
     // dictionnaire contenuant les informations, question : reponse
-    private var data: [String:String] = [
-        "Image": "UA-Guid_logo.png",
-        "Bouton vers la carte": "#scolaireToCarte",
-        "0Read Me": "Voila, il suffit de d'ajouter les question/reponse maintenant. Attention il ne faut pas qu'il y ai plusieurs fois la meme question",
-        "Question": "Reponse",
-        "Question1": "Reponse",
-        "Question2": "Reponse",
-        "Question3": "Reponse",
-        "Question4": "Reponse",
-        "Question5": "Reponse",
-        "Question6": "Reponse",
-        "Question7": "Reponse"
+    private var data: [String:String] = ["Image": "UA-Guid_logo.png",
+                                         "Bouton vers la carte": "#scolaireToCarte",
+                                         
+                                         "Comment régler ses droits d'inscription": "vous devez transmettre dans les 48h, les pièces justificatives attendues au format numérique à l’adresse suivante : www.univ-antilles.fr/pjweb (link is external).",
+                                         "Suivre son inscription administrative": "Reponse",
+                                         "Demander l'exonération des droits de scolarité": "Pour bénéficier de l’exonération des droits de scolarité, vous devez d’abord déposer au service de scolarité de votre composante (Unité de formation et de recherche, Département, Ecole, Institut) le dossier de demande d’exonération puis vous prenez contact avec une assistante sociale du CROUS.",
+                                         
+                                         "Demander l'annulation et le remboursement de son inscription": "L’annulation de l’inscription administrative peut être accordée si l’étudiant est accepté dans un autre établissement d’enseignement supérieur public en France, dans l’Union Européenne, l’Espace économique européenne et la Confédération Suisse, ou qu’il ne souhaite pas poursuivre son cursus et ne souhaite plus bénéficier du statut d’étudiant.",
+                                         
+                                         "Demander son transfert départ": "Demandez la délivrance d’un quitus au Service Commun de Documentation (bibliothèque universitaire). Cette démarche peut s’effectuer en ligne en cliquant sur le lien suivant : quitus@univ-ag.fr",
+                                         
+                                         "Comment payer par virement bancaire":"virement.png",
+                                         "Question78": "Reponse"
     ]
     
     // Tableau de String vide
