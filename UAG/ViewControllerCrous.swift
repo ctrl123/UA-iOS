@@ -124,15 +124,11 @@ class ViewControllerCrous: UIViewController, UITableViewDataSource, UITableViewD
     private var data: [String:String] = [
         "Image": "UA-Guid_logo.png",
         "Bouton vers la carte": "#crousToCarte",
-        "0Read Me": "Voila, il suffit de d'ajouter les question/reponse maintenant. Attention il ne faut pas qu'il y ai plusieurs fois la meme question",
-        "Question": "Reponse",
-        "Question1": "Reponse",
-        "Question2": "Reponse",
-        "Question3": "Reponse",
-        "Question4": "Reponse",
-        "Question5": "Reponse",
-        "Question6": "Reponse",
-        "Question7": "Reponse"
+        "Qu'est ce que le CROUS?": "Les centres régionaux des œuvres universitaires et scolaires ou CROUS sont des établissements publics à caractère administratif chargés principalement de l'aide sociale, de l'accueil des étudiants internationaux, du logement pour étudiants, de la restauration universitaire et de la vie culturelle étudiante. Ils sont animés, dans le cadre d'un réseau national, par le Centre national des œuvres universitaires et scolaires.",
+        "Qui en sont les responsable?": "Le Conseil d’administration du CROUS des Antilles et de la Guyane est présidé par Monsieur Camille GALAP, Recteur de l’Académie de la Guadeloupe, Chancelier des l’Universités, membre de droit. La Vice-Présidence est assurée par Madame Charlina PILIER-REYES, étudiante  élue au Conseil d’Administration du 16 mars 2017.",
+        "Qui est eligible à la bourse?": "Condition d’âge : moins de 28 ans, Condition de diplôme : Niveau Baccalauréat (pour la première demande), Condition de nationalité :étudiants français, ou andorrans de formation française étudiants européens        étudiants étrangers domiciliés en France depuis au moins 2 ans        étudiants étrangers réfugié ou apatride reconnus par l’OFPRA, Condition d’études :        formation initiale à temps plein        France ou Etat membre du Conseil de l’Europe        établissement d’enseignement public ou privé    formation habilité",
+        "Vos bourses": "La demande de bourse et/ou de logement se fait uniquement en ligne, sur la plateforme messervices.etudiant.gouv.fr, Depuis l’année scolaire 2015-2016, les bourses sur critères sociaux émanant du Ministère de l’Agriculture, de l’Agroalimentaire et de la Forêt seront gérées par les Crous. Ainsi, les étudiants ayant droit à cette bourse bénéficieront d’un paiement mensuel.",
+        "Votre contact": "Cité universitaire de SCHOELCHER, B.P. 7208, 97275 SCHOELCHER Cedex, Tél : 0596 61 36 73, Fax : 0596 61 91 50"
     ]
     
     // Tableau de String vide
