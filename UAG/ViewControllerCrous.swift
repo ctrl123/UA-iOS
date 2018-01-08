@@ -122,7 +122,6 @@ class ViewControllerCrous: UIViewController, UITableViewDataSource, UITableViewD
     
     // dictionnaire contenuant les informations, question : reponse
     private var data: [String:String] = [
-        "Image": "UA-Guid_logo.png",
         "Bouton vers la carte": "#crousToCarte",
         "Qu'est ce que le CROUS?": "Les centres régionaux des œuvres universitaires et scolaires ou CROUS sont des établissements publics à caractère administratif chargés principalement de l'aide sociale, de l'accueil des étudiants internationaux, du logement pour étudiants, de la restauration universitaire et de la vie culturelle étudiante. Ils sont animés, dans le cadre d'un réseau national, par le Centre national des œuvres universitaires et scolaires.",
         "Qui en sont les responsable?": "Le Conseil d’administration du CROUS des Antilles et de la Guyane est présidé par Monsieur Camille GALAP, Recteur de l’Académie de la Guadeloupe, Chancelier des l’Universités, membre de droit. La Vice-Présidence est assurée par Madame Charlina PILIER-REYES, étudiante  élue au Conseil d’Administration du 16 mars 2017.",
